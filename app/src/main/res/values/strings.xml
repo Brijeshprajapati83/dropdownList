@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Demo WebSankul</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinnerList">
+
+        <item>Select Company</item>
+        <item>Honda</item>
+        <item>Bajaj</item>
+        <item>Tvs</item>
+
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chooseFem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaterialFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/imageSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:text="Service type"
+                android:textColor="#0F172A"
+                android:textFontWeight="500"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:lineHeight="@dimen/_25sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Remark/Complains"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:lineHeight="@dimen/_27sdp" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedByDefault="false"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/_10sdp"
+                android:textSize="20sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/relOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMethod"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etChange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Charges Amount"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="#99000000"
+                    android:textFontWeight="400"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    app:lineHeight="@dimen/_27sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tx1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="INR. 1000"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMethod"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Text"
+                    android:id="@+id/etText"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="#99000000"
+                    android:textFontWeight="400"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    app:lineHeight="@dimen/_27sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tx2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="INR. 50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMethod"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Discounts"
+                    android:id="@+id/etDiscount"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="#99000000"
+                    android:textFontWeight="400"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    app:lineHeight="@dimen/_27sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/imgPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="- INR. 50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMethod"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/checkBox"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:text="Charges Amount"
+                    android:textColor="#99000000"
+                    android:textFontWeight="400"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    app:lineHeight="@dimen/_27sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tx4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:text="100 Points"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/purple_200"
+                android:paddingVertical="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="Net Payable amount"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textFontWeight="400"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/btnCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineHeight="@dimen/_16sdp"
+                    android:text="I Agree"
+                    android:textColor="#99000000"
+                    android:textFontWeight="600"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineHeight="@dimen/_16sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:text="Terms and Condition"
+                    android:textColor="#99000000"
+                    android:textFontWeight="600"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Button
+                android:id="@+id/btnSaveMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <Button
+                android:id="@+id/btnNextMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

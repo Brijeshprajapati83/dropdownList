@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Payment method"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:lineHeight="@dimen/_25sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="INR.900"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:lineHeight="@dimen/_25sdp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relCash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAmt"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/line_shap">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text="Online Payment"
+                android:textSize="@dimen/_15sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgOnline"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text="Cash Payment"
+                android:textSize="@dimen/_15sdp" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnSaveTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Save" />
+    <Button
+        android:id="@+id/btnNextTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSaveTest"
+        android:layout_centerInParent="true"
+        android:text="Next" />
+
+
+</RelativeLayout>
